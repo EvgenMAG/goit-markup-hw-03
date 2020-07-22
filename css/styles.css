@@ -16,13 +16,43 @@
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
 }
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+/* Header container */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid tomato;
+}
+
+.header {
+  background-color: wheat;
+}
 /* Logo */
-.logo {
+.logo.header {
   font-family: Raleway, sans-serif;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.2;
+  display: inline-block;
+  margin-top: 24px;
+  margin-bottom: 25px;
 }
+
 .logo-blue {
   color: var(--acent-color);
 }
@@ -35,6 +65,8 @@
 /* navigation */
 .list {
   list-style: none;
+  margin: 0px;
+  padding: 0px;
 }
 .site-nav .link {
   color: var(--main-text-color);
@@ -60,15 +92,26 @@
 }
 
 /* Hero */
+.hero {
+  outline: 2px solid tomato;
+  text-align: center;
+  margin-bottom: 94px;
+}
 .hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
-  text-align: center;
+
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-top: 0px;
+  margin-bottom: 30px;
 }
 /* Section */
+.section {
+  margin-bottom: 94px;
+}
+
 .section-title {
   color: var(--main-text-color);
 
@@ -76,20 +119,33 @@
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
+  margin-top: 0px;
+  margin-bottom: 50px;
 }
 /* Наши фишки */
+.benefits-link {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+.benefits-img {
+  margin: 25px 100px;
+}
+
 .benefits-text {
   color: var(--secondary-text-color);
 
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
+  margin: 0px;
 }
 .benefits-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 /* Чем мы занимаемся */
 .job-title h3 {
@@ -99,16 +155,28 @@
   text-align: center;
   text-transform: uppercase;
 }
-
+.job-title h3 {
+  margin: 0px;
+}
 /* Наша команда */
-.bg {
+.section.bg {
   background-color: #f5f4fa;
 }
+.section.with-padding {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.our-team img {
+  margin-bottom: 30px;
+}
+
 .our-team h3 {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 .team-text {
   color: var(--secondary-text-color);
@@ -116,6 +184,8 @@
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
+  margin-top: 0px;
+  margin-bottom: 16px;
 }
 .social-link.list a:hover,
 .social-link.list a:focus {
@@ -126,6 +196,13 @@
 
 /* Button */
 .button {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 11px 32px;
+
+  min-width: 200px;
+  text-align: center;
+
   background-color: var(--acent-color);
   color: #ffffff;
   font-weight: bold;
@@ -142,9 +219,21 @@ a {
 
 /* Footer */
 
+.logo.footer {
+  display: inline-block;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
 .foot-style {
   background-color: #2f303a;
   color: white;
+}
+
+.list.contacts > li:not(:last-child) {
+  margin-bottom: 9px;
+}
+.contacts.link {
+  display: inline-block;
 }
 
 .list .adr {
@@ -162,15 +251,26 @@ a {
   line-height: 1.7;
 }
 div > b {
+  display: inline-block;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.2;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 /* Styles Portfolio */
 
+.portfolio-section {
+  padding-top: 93px;
+  padding-bottom: 94px;
+}
+
 /* menu */
+.menu {
+  padding-bottom: 16px;
+  margin-bottom: 34px;
+}
 .nav-titel {
   color: var(--main-text-color);
   background-color: #f5f4fa;
@@ -179,24 +279,45 @@ div > b {
   font-size: 16px;
   line-height: 1.6;
   cursor: pointer;
+  border-radius: 4px;
+  min-width: 73px;
+  text-align: center;
+  padding: 6px 22px;
 }
 .nav-titel:hover {
   color: var(--main-bg-color);
   background-color: var(--acent-color);
 }
 /* Портфолио продуктов */
-.work-text {
-  color: var(--secondary-text-color);
-  font-size: 16px;
-  line-height: 1.87;
+.product img {
+  margin-bottom: 20px;
 }
+.product a {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
 .work-titel {
   color: var(--main-text-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-top: 0px;
+  margin-bottom: 4px;
 }
+.product p {
+  margin: 0px;
+}
+
+.product .work-text {
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  line-height: 1.87;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
 p > span {
   color: var(--main-text-color);
   font-size: 18px;
