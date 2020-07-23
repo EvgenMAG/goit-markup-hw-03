@@ -284,14 +284,14 @@ div > b {
 .portfolio-section {
   padding-top: 93px;
   padding-bottom: 94px;
-  background-color: yellowgreen;
 }
-
 /* menu */
-.menu {
+
+.menu-container {
   padding-bottom: 16px;
   margin-bottom: 34px;
 }
+
 .nav-titel {
   color: var(--main-text-color);
   background-color: #f5f4fa;
