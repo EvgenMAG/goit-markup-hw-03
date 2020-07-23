@@ -3,6 +3,18 @@
 /* акцент  #2196F3 */
 /* вторичный цвет фона #F5F4FA */
 /* цвет фона подвала #2F303A */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Остальной код */
 :root {
   --main-text-color: #212121;
   --secondary-text-color: #757575;
@@ -37,20 +49,23 @@
   padding-left: 15px;
   padding-right: 15px;
   outline: 2px solid tomato;
+  background-color: skyblue;
 }
 
 .header {
   background-color: wheat;
 }
+
 /* Logo */
-.logo.header {
+
+.logo.head {
   font-family: Raleway, sans-serif;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.2;
   display: inline-block;
-  margin-top: 24px;
-  margin-bottom: 25px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .logo-blue {
@@ -95,7 +110,6 @@
 .hero {
   outline: 2px solid tomato;
   text-align: center;
-  margin-bottom: 94px;
 }
 .hero-title {
   font-weight: 900;
@@ -109,7 +123,13 @@
 }
 /* Section */
 .section {
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: wheat;
+}
+.section.fishki {
+  padding-bottom: 0px;
+  background-color: wheat;
 }
 
 .section-title {
@@ -162,12 +182,9 @@
 .section.bg {
   background-color: #f5f4fa;
 }
-.section.with-padding {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-.our-team img {
-  margin-bottom: 30px;
+
+.team-container {
+  padding-top: 30px;
 }
 
 .our-team h3 {
@@ -192,6 +209,9 @@
   color: var(--acent-color);
 }
 
+.social-link.list {
+  padding-bottom: 24px;
+}
 /* Постоянные клиенты */
 
 /* Button */
@@ -221,10 +241,10 @@ a {
 
 .logo.footer {
   display: inline-block;
-  margin-top: 60px;
+  padding-top: 60px;
   margin-bottom: 20px;
 }
-.foot-style {
+.foot.style {
   background-color: #2f303a;
   color: white;
 }
@@ -264,6 +284,7 @@ div > b {
 .portfolio-section {
   padding-top: 93px;
   padding-bottom: 94px;
+  background-color: yellowgreen;
 }
 
 /* menu */
@@ -289,11 +310,16 @@ div > b {
   background-color: var(--acent-color);
 }
 /* Портфолио продуктов */
-.product img {
-  margin-bottom: 20px;
+
+.product-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
+
 .product a {
   display: inline-block;
+}
+.list-item:nth-child(-n + 6) {
   margin-bottom: 30px;
 }
 
@@ -314,8 +340,6 @@ div > b {
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.87;
-  margin-top: 0px;
-  margin-bottom: 20px;
 }
 
 p > span {
