@@ -19,33 +19,33 @@
     <!--Шапка сайт-->
     <header class="header">
       <div class="container">
-        <nav>
+        <nav class="flexbox-nav">
           <a href="./index.html" class="logo head">
             <span class="logo-blue">Web</span>
             <span class="logo-black">Studio</span>
           </a>
           <ul class="site-nav list">
-            <li>
+            <li class="item">
               <a href="./index.html" class="link">Студия</a>
             </li>
-            <li>
+            <li class="item">
               <a href="" class="link current">Портфолио</a>
             </li>
-            <li>
+            <li class="item">
               <a href="" class="link">Контакты</a>
             </li>
           </ul>
+          <ul class="contact-nav list">
+            <li class="item">
+              <a href="mailto:info@devstudio.com" class="link"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="item">
+              <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+            </li>
+          </ul>
         </nav>
-        <ul class="contact-nav list">
-          <li>
-            <a href="mailto:info@devstudio.com" class="link"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
-          </li>
-        </ul>
       </div>
     </header>
     <!-- main container -->
@@ -56,20 +56,30 @@
           <h1 class="visually-hidden">Портфолио Товаров</h1>
           <!-- menu -->
           <div class="menu-container">
-            <ul class="nav list">
-              <li><button class="nav-titel">Все</button></li>
-              <li><button class="nav-titel">Веб-сайты</button></li>
-              <li><button class="nav-titel">Приложения</button></li>
-              <li><button class="nav-titel">Дизайн</button></li>
-              <li><button class="nav-titel">Маркетинг</button></li>
+            <ul class="nav menu list">
+              <li class="nav-item list">
+                <button class="nav-titel">Все</button>
+              </li>
+              <li class="nav-item list">
+                <button class="nav-titel">Веб-сайты</button>
+              </li>
+              <li class="nav-item list">
+                <button class="nav-titel">Приложения</button>
+              </li>
+              <li class="nav-item list">
+                <button class="nav-titel">Дизайн</button>
+              </li>
+              <li class="nav-item list">
+                <button class="nav-titel">Маркетинг</button>
+              </li>
             </ul>
           </div>
 
           <!-- Виды продуктов-->
 
           <h2 class="visually-hidden">Виды продуктов</h2>
-          <ul class="product list">
-            <li class="list-item">
+          <ul class="flex product list">
+            <li class="flex list-item">
               <a href="" class="">
                 <img
                   src="./img-portfolio/technokryak.jpg"
@@ -78,18 +88,13 @@
                 <div class="product-container">
                   <h3 class="work-titel">Технокряк</h3>
                   <p>
-                    <span
-                      >Технокряк это современная площадка распространения
-                      коронавируса. Компании используют эту платформу для
-                      цифрового шпионажа и атак на защищённые сервера
-                      конкурентов.</span
-                    >
+                    <span>Технокряк это .</span>
                   </p>
                   <p class="work-text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="list-item">
+            <li class="flex list-item">
               <a href="" class="">
                 <img
                   src="./img-portfolio/basketboll.jpg"
@@ -98,131 +103,91 @@
                 <div class="product-container">
                   <h3 class="work-titel">Постер New Orlean vs Golden Star</h3>
                   <p>
-                    <span
-                      >Технокряк это современная площадка распространения
-                      коронавируса. Компании используют эту платформу для
-                      цифрового шпионажа и атак на защищённые сервера
-                      конкурентов.</span
-                    >
+                    <span>Технокряк это .</span>
                   </p>
                   <p class="work-text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="list-item">
+            <li class="flex list-item">
               <a href="" class="">
                 <img src="./img-portfolio/seafood.jpg" alt="fish" />
                 <div class="product-container">
                   <h3 class="work-titel">Ресторан Seafood</h3>
                   <p>
-                    <span
-                      >Технокряк это современная площадка распространения
-                      коронавируса. Компании используют эту платформу для
-                      цифрового шпионажа и атак на защищённые сервера
-                      конкурентов.</span
-                    >
+                    <span>Технокряк это .</span>
                   </p>
                   <p class="work-text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="list-item">
+            <li class="flex list-item">
               <a href="" class="">
                 <img src="./img-portfolio/headset.jpg" alt="headset" />
                 <div class="product-container">
                   <h3 class="work-titel">Проект Prime</h3>
                   <p>
-                    <span
-                      >Технокряк это современная площадка распространения
-                      коронавируса. Компании используют эту платформу для
-                      цифрового шпионажа и атак на защищённые сервера
-                      конкурентов.</span
-                    >
+                    <span>Технокряк это.</span>
                   </p>
                   <p class="work-text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="list-item">
+            <li class="flex list-item">
               <a href="" class="">
                 <img src="./img-portfolio/boxes.jpg" alt="boxes" />
                 <div class="product-container">
                   <h3 class="work-titel">Проект Boxes</h3>
                   <p>
-                    <span
-                      >Технокряк это современная площадка распространения
-                      коронавируса. Компании используют эту платформу для
-                      цифрового шпионажа и атак на защищённые сервера
-                      конкурентов.</span
-                    >
+                    <span>Технокряк это .</span>
                   </p>
                   <p class="work-text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="list-item">
+            <li class="flex list-item">
               <a href="" class="">
                 <img src="./img-portfolio/imac.jpg" alt="imac screen" />
                 <div class="product-container">
                   <h3 class="work-titel">Inspiration has no Borders</h3>
                   <p>
-                    <span
-                      >Технокряк это современная площадка распространения
-                      коронавируса. Компании используют эту платформу для
-                      цифрового шпионажа и атак на защищённые сервера
-                      конкурентов.</span
-                    >
+                    <span>Технокряк .</span>
                   </p>
                   <p class="work-text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="list-item">
+            <li class="flex list-item">
               <a href="" class="">
                 <img src="./img-portfolio/magazine.jpg" alt="magazine" />
                 <div class="product-container">
                   <h3 class="work-titel">Издание Limited Edition</h3>
                   <p>
-                    <span
-                      >Технокряк это современная площадка распространения
-                      коронавируса. Компании используют эту платформу для
-                      цифрового шпионажа и атак на защищённые сервера
-                      конкурентов.</span
-                    >
+                    <span>Технокряк это .</span>
                   </p>
                   <p class="work-text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="list-item">
+            <li class="flex list-item">
               <a href="" class="">
                 <img src="./img-portfolio/label.jpg" alt="label" />
                 <div class="product-container">
                   <h3 class="work-titel">Проект LAB</h3>
                   <p>
-                    <span
-                      >Технокряк это современная площадка распространения
-                      коронавируса. Компании используют эту платформу для
-                      цифрового шпионажа и атак на защищённые сервера
-                      конкурентов.</span
-                    >
+                    <span>Технокряк это .</span>
                   </p>
                   <p class="work-text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="list-item">
+            <li class="flex list-item">
               <a href="" class="">
                 <img src="./img-portfolio/macpro.jpg" alt="mac laptop" />
                 <div class="product-container">
                   <h3 class="work-titel">Growing Business</h3>
                   <p>
-                    <span
-                      >Технокряк это современная площадка распространения
-                      коронавируса. Компании используют эту платформу для
-                      цифрового шпионажа и атак на защищённые сервера
-                      конкурентов.</span
-                    >
+                    <span>Технокряк это .</span>
                   </p>
                   <p class="work-text">Веб-сайт</p>
                 </div>
@@ -232,6 +197,7 @@
         </div>
       </section>
     </main>
+
     <!-- Футер -->
     <footer class="foot-style">
       <div class="container">
