@@ -54,12 +54,9 @@ html {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid tomato;
-  background-color: cyan;
 }
 
 .header {
-  background-color: wheat;
 }
 
 /* Logo */
@@ -85,10 +82,14 @@ html {
   color: var(--main-bg-color);
 }
 /* navigation */
-.flexbox-nav {
+.flex-container {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+}
+
+.flexbox-nav {
+  display: flex;
 }
 
 .site-nav .link {
@@ -137,7 +138,8 @@ html {
 
 /* Hero */
 .hero {
-  outline: 2px solid tomato;
+  background-color: gray;
+
   text-align: center;
 }
 .hero-title {
@@ -163,16 +165,15 @@ html {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.9;
+  text-align: center;
 }
 /* Section */
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-  background-color: wheat;
 }
 .section.fishki {
   padding-bottom: 0px;
-  background-color: wheat;
 }
 
 .section-title {
@@ -290,6 +291,12 @@ html {
   width: calc((100% - 150px) / 6);
   margin: 15px;
 }
+.clients-link {
+  display: block;
+}
+
+.clients-img {
+}
 /* a NONE */
 
 a {
@@ -301,8 +308,10 @@ a {
 
 .logo.footer {
   display: inline-block;
-  padding-top: 60px;
   margin-bottom: 20px;
+}
+.adress.foot-item {
+  margin-top: 60px;
 }
 .foot-style {
   background-color: #2f303a;
@@ -339,6 +348,23 @@ div > b {
   margin-bottom: 20px;
 }
 
+.footer-flex {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.foot-item.subscribe {
+  margin-left: auto;
+}
+.foot-item.social {
+  margin-left: 69px;
+}
+
+.foot-style .link:hover,
+.foot-style .link:focus {
+  color: var(--acent-color);
+}
+
 /* Styles Portfolio */
 
 .portfolio-section {
@@ -350,17 +376,14 @@ div > b {
 .menu-container {
   padding-bottom: 16px;
   margin-bottom: 34px;
-  border: 2px solid blue;
 }
 
 .nav.menu.list {
   display: flex;
-  width: 611px;
-  justify-content: space-between;
-  margin-right: auto;
-  margin-left: auto;
+  justify-content: center;
 }
-.nav-item.list {
+.nav-item.list:not(:last-child) {
+  margin-right: 8px;
 }
 
 .nav-titel {
@@ -389,7 +412,6 @@ div > b {
 .product.list {
   display: flex;
   flex-wrap: wrap;
-  outline: 2px solid gold;
 }
 
 .product a {
@@ -397,7 +419,7 @@ div > b {
 }
 .flex.list-item {
   width: calc((100% - 60px) / 3);
-  background-color: tomato;
+
   margin-right: 30px;
   margin-bottom: 30px;
 }

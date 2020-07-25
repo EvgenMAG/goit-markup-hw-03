@@ -19,6 +19,7 @@
     <!--Шапка сайт-->
     <header class="header">
       <div class="container">
+        <div class="flex-container">
         <nav class="flexbox-nav">
           <a href="./index.html" class="logo head">
             <span class="logo-blue">Web</span>
@@ -34,6 +35,7 @@
             <li class="item">
               <a href="" class="link">Контакты</a>
             </li>
+            </nav>
           </ul>
           <ul class="contact-nav list">
             <li class="item">
@@ -45,7 +47,7 @@
               <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
             </li>
           </ul>
-        </nav>
+        </div>
       </div>
     </header>
     <!-- main container -->
@@ -200,8 +202,8 @@
 
     <!-- Футер -->
     <footer class="foot-style">
-      <div class="container">
-        <div>
+      <div class="container footer-flex">
+        <div class="adress foot-item">
           <a href="./index.html" class="logo footer">
             <span class="logo-blue">Web</span>
             <span class="logo-white">Studio</span>
@@ -210,9 +212,7 @@
             <ul class="list contacts">
               <li class="adr">г. Киев, пр-т Леси Украинки, 26</li>
               <li>
-                <a href="mailto:info@devstudio.com" class="link"
-                  >info@devstudio.com</a
-                >
+                <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
               </li>
               <li>
                 <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
@@ -220,7 +220,8 @@
             </ul>
           </address>
         </div>
-        <div>
+    
+        <div class="foot-item social">
           <b>присоединяйтесь</b>
           <ul class="social-link list">
             <li><a href="" aria-label="Instagram">Инста</a></li>
@@ -229,7 +230,9 @@
             <li><a href="" aria-label="Linkedin">Линкдин</a></li>
           </ul>
         </div>
-        <div><a href="" class="button">Подписаться</a></div>
+        <div class="foot-item subscribe">
+          <a href="" class="button">Подписаться</a>
+        </div>
       </div>
     </footer>
   </body>
