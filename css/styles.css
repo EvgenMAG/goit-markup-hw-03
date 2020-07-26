@@ -15,6 +15,7 @@ html {
 }
 
 /* Utilita */
+
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -202,8 +203,10 @@ html {
   margin-bottom: 30px;
 }
 .benefits-img {
-  margin: 25px 100px;
+  padding: 25px 100px;
+  display: block;
 }
+
 .benefits-title {
   font-weight: 700;
   font-size: 14px;
@@ -242,7 +245,12 @@ html {
 .job-item.flex:last-child {
   margin-right: 0px;
 }
-
+.job-item > a {
+  display: block;
+}
+.job-item img {
+  display: block;
+}
 /* Наша команда */
 .section.bg {
   background-color: #f5f4fa;
@@ -255,6 +263,9 @@ html {
 .our-team.flex {
   display: flex;
   margin: -15px;
+}
+.item.flex > img {
+  display: block;
 }
 
 .our-team h3 {
@@ -291,12 +302,26 @@ html {
   width: calc((100% - 150px) / 6);
   margin: 15px;
 }
+
 .clients-link {
-  display: block;
+  display: flex;
+  height: 90px;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  border-color: var(--acent-color);
 }
 
 .clients-img {
+  display: block;
+  margin: 0px auto;
+  align-items: center;
 }
+
 /* a NONE */
 
 a {
@@ -316,7 +341,8 @@ a {
   line-height: 1.2;
 }
 .adress.foot-item {
-  margin-top: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .foot-style {
   background-color: #2f303a;
@@ -403,6 +429,7 @@ div > b {
   min-width: 73px;
   text-align: center;
   padding: 6px 22px;
+  border: none;
 }
 .nav-titel:hover {
   color: var(--main-bg-color);
@@ -422,6 +449,10 @@ div > b {
 .product a {
   display: inline-block;
 }
+.product img {
+  display: block;
+}
+
 .flex.list-item {
   width: calc((100% - 60px) / 3);
 
